@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkRepo", "HomeWorkRepo\HomeWorkRepo.csproj", "{4C1234E4-9573-4203-A90A-4D755F2F350F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomewWorkCalculator", "HomewWorkCalculator\HomewWorkCalculator.csproj", "{82C796AE-11B5-4A85-84D7-3BA02E83B314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4C1234E4-9573-4203-A90A-4D755F2F350F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C1234E4-9573-4203-A90A-4D755F2F350F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C1234E4-9573-4203-A90A-4D755F2F350F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C796AE-11B5-4A85-84D7-3BA02E83B314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C796AE-11B5-4A85-84D7-3BA02E83B314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C796AE-11B5-4A85-84D7-3BA02E83B314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C796AE-11B5-4A85-84D7-3BA02E83B314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
