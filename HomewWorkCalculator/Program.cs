@@ -36,7 +36,8 @@ namespace HomewWorkCalculator
                 catch (Exception)
                 {
                     Console.WriteLine("Такого числа не существует");
-                    break;
+                    Console.ReadKey();
+                    continue;
                 }
 
                 Console.Write("Введите операцию: ");
