@@ -41,7 +41,7 @@ namespace DZ5
                     case "4":
                         Sign(userText);
                         break;
-                    case "7":
+                    case "5":
                         run = false;
                         break;
                     default:
