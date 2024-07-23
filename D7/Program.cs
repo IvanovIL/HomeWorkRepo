@@ -12,6 +12,7 @@ namespace D7
 
             Inventory inventory = new Inventory();
         }
+        // решение с помощью классов
         //class Product
         //{
         //    public int price;
@@ -70,7 +71,7 @@ namespace D7
         //    }
 
         //}
-
+        //решение с помощью структур
         struct Product
         {
             public int price;
