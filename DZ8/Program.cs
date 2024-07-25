@@ -40,7 +40,7 @@ namespace DZ8
             public Dog()
             {
                
-                Animal animal;
+               
             }
 
             public override void Eat()
