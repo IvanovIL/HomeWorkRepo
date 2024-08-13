@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /DZ12/DZ12.csproj
+/Domashka12/Program.cs
+/Dz12 login and password/Dz12 login and password.csproj
