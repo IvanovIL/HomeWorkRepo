@@ -1,0 +1,6 @@
+@DZ15_HostAddress = http://localhost:5134
+
+GET {{DZ15_HostAddress}}/Meetingt/
+Accept: application/json
+
+###

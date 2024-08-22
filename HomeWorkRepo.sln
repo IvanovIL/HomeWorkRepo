@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZ11", "DZ11\DZ11.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dz12 login and password", "Dz12 login and password\Dz12 login and password.csproj", "{26B5499E-745D-4CF9-ADE0-5B6D991E9319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ13", "DZ13\DZ13.csproj", "{0CB93B77-3109-4BCF-9AAD-A87E1679237C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZ13", "DZ13\DZ13.csproj", "{0CB93B77-3109-4BCF-9AAD-A87E1679237C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ15", "DZ15\DZ15.csproj", "{68DF37A2-533C-48FC-B281-9D41315D1B17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{0CB93B77-3109-4BCF-9AAD-A87E1679237C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CB93B77-3109-4BCF-9AAD-A87E1679237C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CB93B77-3109-4BCF-9AAD-A87E1679237C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DF37A2-533C-48FC-B281-9D41315D1B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DF37A2-533C-48FC-B281-9D41315D1B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DF37A2-533C-48FC-B281-9D41315D1B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DF37A2-533C-48FC-B281-9D41315D1B17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
