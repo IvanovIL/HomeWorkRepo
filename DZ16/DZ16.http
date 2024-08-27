@@ -1,0 +1,6 @@
+@DZ16_HostAddress = http://localhost:5205
+
+GET {{DZ16_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
