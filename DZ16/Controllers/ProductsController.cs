@@ -84,17 +84,16 @@ namespace DZ16.Controllers
                         
             }
 
-            if (true)
+            if (run)
             {
-
-                productsList.Add(product1);
-                return Ok(productsList);
-
+                return BadRequest();
 
             }
             else
             {
-                return BadRequest();
+                productsList.Add(product1);
+                return Ok(productsList);
+               
             }
             
         }
