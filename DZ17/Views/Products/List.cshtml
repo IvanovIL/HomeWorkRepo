@@ -1,0 +1,20 @@
+﻿﻿@using DZ17.Controllers
+@using DZ17.Models
+
+@model List<Product>
+
+
+<html>
+<body>
+	<h1>Product:</h1>
+	<ul>
+		@foreach (var product in Model)
+		{
+			<li>
+				<strong>@product.Id</strong> - Name: @product.Name - Price: @product.Price
+			</li>
+		}
+	</ul>
+</body>
+</html>
+

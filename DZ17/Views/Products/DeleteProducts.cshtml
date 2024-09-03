@@ -1,0 +1,34 @@
+﻿@using DZ17.Controllers
+@using DZ17.Models
+@{
+	ViewData["Title"] = "DeleteProducts";
+}
+
+@model Product
+
+
+<html>
+<body>
+	<h1>Product:</h1>
+	<ul>
+		@using (Html.BeginForm("Delete", "Products", FormMethod.Post))
+		{
+			<div>
+				@Html.LabelFor(Model => Model.Id)
+				@Html.TextBoxFor(Model => Model.Id)
+			</div>
+			<div>
+				<button type="submit" class="btn btn-outline-secondary" value="Delete" />
+
+			</div>
+
+		}
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
