@@ -1,3 +1,8 @@
+
+using Microsoft.AspNetCore.Builder;
+
+
+
 namespace DZ17
 {
 	public class Program
@@ -11,6 +16,11 @@ namespace DZ17
 
 			var app = builder.Build();
 
+		
+	
+			// Returns "Timeout!"
+
+			app.Run();
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())
 			{
@@ -23,7 +33,7 @@ namespace DZ17
 			app.UseStaticFiles();
 
 			app.UseRouting();
-			
+
 
 			app.UseAuthorization();
 
@@ -33,5 +43,8 @@ namespace DZ17
 
 			app.Run();
 		}
+
+	
+
 	}
 }

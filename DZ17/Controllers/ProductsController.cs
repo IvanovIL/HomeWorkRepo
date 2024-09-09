@@ -1,14 +1,13 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DZ17.Models;
-using System.IO.Pipelines;
-using System.Xml.Linq;
-using Microsoft.Net.Http.Headers;
+
 
 namespace DZ17.Controllers;
 [Route("Products")]
 public class ProductsController : Controller
 {
+
 	public List<Product> products = new List<Product>()
 	{
 			new Product {Id = 1, Name = "Смартфон", Price = 2000 },
@@ -24,7 +23,7 @@ public class ProductsController : Controller
 
 	public IActionResult List()
 	{
-	
+		
 		return View("List",products);
 	}
 
