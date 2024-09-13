@@ -1,13 +1,16 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DZ17.Models;
-
+using System.IO.Pipelines;
+using System.Xml.Linq;
+using Microsoft.Net.Http.Headers;
+using DZ17.Filtr;
 
 namespace DZ17.Controllers;
 [Route("Products")]
+
 public class ProductsController : Controller
 {
-
 	public List<Product> products = new List<Product>()
 	{
 			new Product {Id = 1, Name = "Смартфон", Price = 2000 },
@@ -20,11 +23,11 @@ public class ProductsController : Controller
 
 	[HttpGet]
 	[Route("List")]
-
+	
 	public IActionResult List()
 	{
-		
-		return View("List",products);
+
+		return View("List", products);
 	}
 
 	[HttpGet]
@@ -60,7 +63,7 @@ public class ProductsController : Controller
 		{
 			return BadRequest();
 		}
-		
+
 	}
 
 	[HttpGet]
@@ -77,7 +80,7 @@ public class ProductsController : Controller
 	{
 		bool run = false;
 
-		for (int i =0; i < products.Count;i++)
+		for (int i = 0; i < products.Count; i++)
 		{
 			if (products[i].Id != userProduct.Id)
 			{
@@ -104,5 +107,5 @@ public class ProductsController : Controller
 		return View("AddProducts");
 	}
 
-	
+
 }

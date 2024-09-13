@@ -1,7 +1,7 @@
 
+using DZ17.Filtr;
+using DZ17.Middleware;
 using Microsoft.AspNetCore.Builder;
-
-
 
 namespace DZ17
 {
@@ -13,14 +13,13 @@ namespace DZ17
 
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
+			builder.Services.AddControllersWithViews( options =>
+			{
+				options.Filters.Add<TimeFiltr>();
+			});
 
 			var app = builder.Build();
-
-		
-	
-			// Returns "Timeout!"
-
-			app.Run();
+			app.UseMiddleware<ExcetpionMiddleware>();
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())
 			{
@@ -34,17 +33,14 @@ namespace DZ17
 
 			app.UseRouting();
 
-
 			app.UseAuthorization();
-
+		
 			app.MapControllerRoute(
 				name: "deafult",
 				pattern: "{controller=Home}/{action=Index}/{id?}");
 
 			app.Run();
 		}
-
-	
-
+		
 	}
 }
